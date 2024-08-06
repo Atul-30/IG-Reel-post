@@ -17,7 +17,7 @@ public class igReelUpload {
     static WebDriverWait wait=new WebDriverWait(driver,timeout);
     
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\atult\\eclipse-workspace\\InsatgramFollowRequest\\src\\main\\resources\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\atult\\git\\IG-Reel-post\\1.0\\src\\main\\resources\\chromedriver.exe");
 		loginInstagram();
 	}
 	
@@ -29,6 +29,9 @@ public class igReelUpload {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='password']"))).sendKeys("Atul@1234");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@type='submit']"))).click();
 	}
-
-
+	
+	public static void fetchReelNameAndCaption()
+	{
+		
+	}
 }
