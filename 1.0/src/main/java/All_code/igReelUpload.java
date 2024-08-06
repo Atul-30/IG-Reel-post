@@ -117,16 +117,13 @@ public class igReelUpload {
             e.printStackTrace();
         }
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='OK']"))).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[5]/div[1]/div/div[3]/div/div/div/div/div/div/div/div[2]/div[1]/div/div/div/div[1]/div/div[2]/div/button/div"))).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//button[@type=\"button\"])[2]"))).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='9:16']"))).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Next']"))).click();
         Thread.sleep(3000);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Next']"))).click();
         Thread.sleep(3000);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@aria-label='Write a caption...']"))).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@aria-label='Write a caption...']"))).sendKeys(caption);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Write a caption...']"))).sendKeys(caption);
         System.out.println(caption);
     }
-        
-    
 }
